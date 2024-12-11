@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -36,6 +37,11 @@
             </div>
         </div>
     </main>
+    <!-- scroll to top -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class='bx bx-chevron-up'></i>
+    </button>
+    <!-- about section -->
     <section id="about" class="about">
         <div class="container">
             <div class="img">
@@ -123,18 +129,18 @@
                 <h3>Contact Us</h3>
             </div>
             <div class="content">
-                <form action="#">
+                <form action="#" id="contact-form">
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" >
+                        <input type="email" required>
                     </div>
                     <div class="form-group">
                         <label for="Subject">Subject</label>
-                        <input type="text" >
+                        <input type="text" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea  id="message" cols="30" rows="5"></textarea>
+                        <textarea  id="message" cols="30" rows="5" required></textarea>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
@@ -146,5 +152,12 @@
                         <li><i class='bx bxs-phone'></i>+234xxxxxxxx</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script src="script.js"></script>
 </body>
 </html>

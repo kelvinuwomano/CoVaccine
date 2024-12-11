@@ -163,6 +163,21 @@ main .text a{
     background: var(--primary);
     color: var(--light);
 }
+/* scroll to top icon */
+.scroll-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: none;
+    color: var(--light);
+    font-size: 24px;
+    padding: 10px 15px;
+    transition: all .3s ease;
+    cursor: pointer;
+    display: none;
+}
 .services{
     width: 100%;
     padding: 64px 0;
